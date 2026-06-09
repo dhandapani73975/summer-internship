@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwYmxvZ3xlbnwwfHwwfHx8MA%3D%3D);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .name{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            margin: 10px;
+        }
+        .image{
+           border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-evenly; 
+            
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            border-radius: 30px;
+        }
+        span{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            left: -200px;
+            opacity: 0;
+        }
+        img:hover+span{
+            opacity: 1;
+            transition: 0.5s;
+            color: rgb(0, 0, 0);
+        }
+        #para{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            color:rgb(0, 255, 115)
+        }
+        h1+h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+            margin: 10px;
+            color:rgb(0, 255, 115)
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <h1>Travel Blog</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+    <div class="name">
+        <h2>Destination</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+       <div class="image">
+             <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGxhY2VzfGVufDB8fDB8fHww" alt=""  height="350px" width="250px">
+            <span>China</span>
+            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fHww" alt="" height="350px" width="250px">
+            <span>Dheli</span>
+            <img src="https://images.unsplash.com/photo-1490761668535-35497054764d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBsYWNlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" height="350px" width="250px">
+            <span>Japan</span>
+            <img src="https://images.unsplash.com/photo-1596306499317-8490232098fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBsYWNlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" height="350px" width="250px">
+            <span>Singapore</span>
+            <!-- <img src="https://plus.unsplash.com/premium_photo-1719409843635-345efac66154?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fHBsYWNlc3xlbnwwfHwwfHx8MA%3D%3D" alt="" height="350px" width="250px">
+            <span>Paris</span> -->
+       </div>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui doloremque quia ipsum nulla inventore ratione provident rem ab laboriosam quisquam quos pariatur iure, officia amet atque impedit tempore dicta maxime.
+        Exercitationem deserunt recusandae officia, laborum temporibus eaque, nesciunt rem perspiciatis nihil, libero veniam repudiandae reprehenderit quia aliquid esse laboriosam unde. Architecto vitae dolorem eveniet saepe fugit dolores sunt quos libero.
+        Veniam obcaecati ullam facilis aut omnis nostrum maiores cupiditate expedita fugiat tempora facere, eius velit perferendis, unde molestiae minus voluptatibus nam blanditiis quidem dicta ipsam deleniti nesciunt maxime? Omnis, quae!</p>
+    </div>
+
+</body>
+</html>
