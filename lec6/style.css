@@ -1,0 +1,81 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background and Centering */
+body {
+    background-color: #3b2e4d; /* Dark purple background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Main Title */
+.page-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+/* Container to hold the cards side-by-side */
+.card-container {
+    display: flex;
+    gap: 40px; /* Space between the two cards */
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to stack on smaller screens */
+}
+.card:hover{
+    transform:translate(-10px);
+    transition: 0.5s;
+    box-shadow: 0 10px 20px rgba(255, 252, 252, 0.2);
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #000000; /* Distinct dark border matching the image */
+    border-radius: 16px;
+    width: 280px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card Typography */
+.card h2 {
+    color: #000000;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #000000;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* Green Button Styling */
+.profile-btn {
+    background-color: #008000; /* Green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.profile-btn:hover {
+    background-color: #006600; /* Darkens slightly on hover */
+}
